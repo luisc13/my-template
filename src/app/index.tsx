@@ -1,5 +1,5 @@
 import { Text } from "react-native";
-import Background from "../components/Background";
+import Background from "@/components/Background";
 
 export default function Home() {
 	return (
