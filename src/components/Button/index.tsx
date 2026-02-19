@@ -6,7 +6,7 @@ export default function ButtonComponent({
 	title,
 	disabled = false,
 	onPress,
-	blankButton,
+	outline,
 	className,
 	halfWidth,
 }: ButtonComponentProps) {
@@ -17,13 +17,13 @@ export default function ButtonComponent({
 				buttonVariants({
 					disabled,
 					className,
-					blankButton,
+					outline,
 					halfWidth,
 				}),
 			)}
 			disabled={disabled}
 		>
-			<Text className="text-lg font-bold color-white">{title}</Text>
+			<Text className="text-lg font-bold text-white">{title}</Text>
 		</TouchableOpacity>
 	);
 }

@@ -1,9 +1,10 @@
-import { Text, View } from "react-native";
+import { Text } from "react-native";
+import Background from "../../components/Background";
 
 export default function Auth() {
 	return (
-		<View className="flex-1 justify-center items-center">
-			<Text>Tela de login</Text>
-		</View>
+		<Background>
+			<Text className="text-2xl font-bold">Auth</Text>
+		</Background>
 	);
 }

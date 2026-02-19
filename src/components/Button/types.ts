@@ -3,13 +3,13 @@ import type { VariantProps } from "tailwind-variants";
 import { tv } from "tailwind-variants";
 
 export const buttonVariants = tv({
-	base: "h-16 bg-red-400 rounded-3xl justify-center items-center",
+	base: "h-14 bg-neutral-800 rounded-2xl justify-center items-center",
 	variants: {
 		disabled: {
-			true: "bg-neutral400",
+			true: "bg-neutral-400",
 		},
-		blankButton: {
-			true: "bg-neutral100 border border-primaryDark800",
+		outline: {
+			true: "bg-transparent border border-neutral-800",
 		},
 		halfWidth: {
 			true: "w-1/2",
@@ -23,5 +23,4 @@ export interface ButtonComponentProps
 		VariantProps<typeof buttonVariants> {
 	title: string;
 	disabled?: boolean;
-	isLoading?: boolean;
 }

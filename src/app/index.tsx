@@ -1,13 +1,10 @@
+import { Text } from "react-native";
 import Background from "../components/Background";
-import ButtonComponent from "../components/Button";
 
-export default function Onboarding() {
+export default function Home() {
 	return (
 		<Background>
-			<ButtonComponent
-				className="shadow-black self-center mt-auto mb-20 w-[70%]"
-				title="Começar"
-			/>
+			<Text className="text-2xl font-bold">Home</Text>
 		</Background>
 	);
 }
